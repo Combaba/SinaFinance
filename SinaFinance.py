@@ -12,7 +12,7 @@ request = urllib.request.Request(url)
 response = urllib.request.urlopen(request)
 soup = BeautifulSoup(response,from_encoding="GB2312")  
 #print(soup)
-
+   
 lstcode =[]
 tr = soup.find_all("tr",attrs={'class':"head"})
 for j in tr:
